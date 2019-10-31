@@ -1,4 +1,8 @@
 .App {
+  background: url('./images/baseballfield.jpg');
+  height: 100vh;
+  background-position: center;
+  max-width: 100%;
   text-align: center;
 }
 

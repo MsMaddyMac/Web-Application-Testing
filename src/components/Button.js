@@ -6,7 +6,7 @@ const buttonStyle = {
 
 const Button = (props) => {
     return (
-        <button className="button" style={buttonStyle}>{props.label}</button>
+        <button style={buttonStyle}>{props.label}</button>
     )
 }
 
