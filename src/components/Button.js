@@ -1,12 +1,13 @@
 import React from 'react'
 
 const buttonStyle = {
-    backgroundColor: '#dd5b50'
+    backgroundColor: '#2061aa',
+    color: '#e7cc99'
 }
 
 const Button = (props) => {
     return (
-        <button style={buttonStyle}>{props.label}</button>
+        <button onClick={props.onClick} style={buttonStyle}>{props.label}</button>
     )
 }
 

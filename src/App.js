@@ -1,7 +1,7 @@
 import React from 'react';
 
 import BaseballField from './images/baseballfield.jpg';
-import Dashboard from './components/Dashboard';
+import Display from './components/Display';
 import './App.css';
 
 
@@ -9,7 +9,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Dashboard />
+      <Display />
     </div>
   );
 }
