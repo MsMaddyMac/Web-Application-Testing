@@ -1,9 +1,20 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import App from './App';
+import Button from './components/Button';
+import Display from './components/Display';
+import { render } from '@testing-library/react';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
-});
+
+test('Renders without crashing', () => {
+  render(<App />);
+})
+
+test('🤩 you can customize you button!', () => {
+  const{ getByTestId } = render(<Button />)
+  getByTestId('custom-button');
+})
+
+test('😜there is some text!', () => {
+  const{ getByText } = render(<Display />)
+  getByText(/balls/i);
+})

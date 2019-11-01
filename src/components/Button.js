@@ -7,7 +7,9 @@ const buttonStyle = {
 
 const Button = (props) => {
     return (
-        <button onClick={props.onClick} style={buttonStyle}>{props.label}</button>
+        <div data-testid='custom-button'>
+            <button onClick={props.onClick} style={buttonStyle}>{props.label}</button>
+        </div>
     )
 }
 

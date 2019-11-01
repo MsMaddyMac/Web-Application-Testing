@@ -16,9 +16,9 @@ const [strikes, setStrikes] = useState(0);
                 <h2 className="display" style={displayStyles}>Strikes: {strikes}</h2>
             </div>
             <div>
+                <Button onClick={() => (strikes > 2) ? setStrikes(0) : setStrikes(strikes + 1)} label={'Strike'} />
                 <Button onClick={() => (balls === 4) ? setBalls(0) : setBalls(balls + 1)} label={'Ball'} />
-                <Button onClick={()=> (strikes > 2) ? setStrikes(0) : setStrikes(strikes + 1)} label={'Strike'} />
-                <Button label={'Foul'}/>
+                <Button onClick={() => (strikes <= 1) ? setStrikes(strikes + 1) : null} label={'Foul'}/>
                 <Button onClick={() => (setBalls(0) || setStrikes(0))} label={'Hit'}/>
             </div>
         </>
