@@ -14,7 +14,7 @@ test('🤩 you can customize you button!', () => {
   getByTestId('custom-button');
 })
 
-test('😜there is some text!', () => {
+test('😜 there is some text!', () => {
   const{ getByText } = render(<Display />)
   getByText(/balls/i);
 })
